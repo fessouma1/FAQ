@@ -1,0 +1,12 @@
+body{
+    background-color: blueviolet;
+}
+#card{
+    background-color: white;
+    margin-top: 50px;
+}
+#leftSide{
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
