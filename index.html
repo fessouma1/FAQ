@@ -5,11 +5,12 @@
    <!-- Required meta tags -->
    <meta charset="utf-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+ <!--
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   -->
    
    <!-- Google Font -->
    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
@@ -34,18 +35,21 @@
 </head>
 <body>
   <section>
-    <div id="card" class="container">
+    <div id="cardDisplay" class="container">
       <div class="row align-items-center">
-        <div id="leftSide" class="col">
-          <img src="images/illustration-woman-online-desktop.svg">
+
+        <div id="leftSide" class="col-md-6">
+          <img src="images/illustration-box-desktop.svg" class="img-fluid" alt="Responsive image">
+          <img src="images/illustration-woman-online-desktop.svg" class="img-fluid" alt="Responsive image">
         </div>
-        <div class="col">
-          <h1>FAQ</h1>
+    
+        <div class="col-md-6">
+          <h1 style="text-align: center;">FAQ</h1>
 
           <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
 
             <!-- Accordion card -->
-            <div class="card">
+            <div class="card"style="border-top: transparent;">
         
               <!-- Card header -->
               <div class="card-header" role="tab" id="headingOne1">
@@ -59,11 +63,97 @@
         
               <!-- Card body -->
               <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-                   data-parent="#accordionEx">
-                <div class="card-body">
+              data-parent="#accordionEx">
+                 <div class="card-body">
                   You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
                 </div>
               </div>
+            </div>
+
+
+            <div class="card">
+
+              <div class="card-header" role="tab" id="headingTwo2">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
+                   aria-expanded="false" aria-controls="collapseTwo2">
+                  <h5 class="mb-0">
+                    What is the maximum file upload? <i class="fas fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+        
+
+              <!-- Card body -->
+              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
+                   data-parent="#accordionEx">
+                 <div class="card-body">
+                  No more than 2GB. All files in your account must fit your allotted storage space.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+
+              <div class="card-header" role="tab" id="headingThree3">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
+                   aria-expanded="false" aria-controls="collapseThree3">
+                  <h5 class="mb-0">
+                   How do i reset my password? <i class="fas fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+        
+              <!-- Card body -->
+              <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
+           data-parent="#accordionEx">
+
+              <div class="card-body">
+                  Click "Forgot password" from the login paper or "Change password" from your profile page. A reset link will be emailed to you
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+
+              <div class="card-header" role="tab" id="headingFour4">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
+                   aria-expanded="false" aria-controls="collapseFour4">
+                  <h5 class="mb-0">
+                  Can I ancel my subscription? <i class="fas fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+        
+              <!-- Card body -->
+              <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
+           data-parent="#accordionEx">
+
+              <div class="card-body">
+                  Yes! Send us a message and we `ll process your request no questions asked!
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+
+              <div class="card-header" role="tab" id="headingFive5">
+                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
+                   aria-expanded="false" aria-controls="collapseFive5">
+                  <h5 class="mb-0">
+                  Do you provide additional support? <i class="fas fa-angle-down rotate-icon"></i>
+                  </h5>
+                </a>
+              </div>
+        
+              <!-- Card body -->
+              <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
+           data-parent="#accordionEx">
+
+              <div class="card-body">
+                  Chat and email support is avialable 24/7. Phone lines are open during normal
+                </div>
+              </div>
+            </div>
         
             </div>
           </div>
@@ -77,9 +167,9 @@
     </div>
   </section>
 
-  <div class="attribution">
+  <div class="fixed-bottom">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="">Franck Essouma</a>.
+    Coded by <a href="https://github.com/fessouma1">Franck Essouma</a>.
   </div>
 </body>
 </html>
