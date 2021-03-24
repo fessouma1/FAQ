@@ -38,5 +38,12 @@ body{
 }
 .attribution{
     position: fixed;
-    
+}
+#woman{
+    position: center;
+}
+#above{
+    position:fixed;
+    margin-top: 9.7em;
+    margin-left: -1.0em;
 }
