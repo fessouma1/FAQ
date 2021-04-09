@@ -20,7 +20,7 @@
    
    <!-- Custom CSS -->
    <link rel="stylesheet" href="app.css">
-   <script src="app.js"></script>
+  
 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
@@ -35,126 +35,49 @@
 </head>
 <body>
   <section>
-    <div id="cardDisplay" class="container">
+    <div id="cardDisplay" class="container" style="align-items: center;">
       <div class="row align-items-center">
         <div id="leftSide" class="col-md-6">
          <img src="images/illustration-box-desktop.svg" class="img-fluid" alt="Responsive image" id="above">
           <img src="images/illustration-woman-online-desktop.svg" class="img-fluid" alt="Responsive image" id="woman">
         </div>
-    
-        <div class="col-md-6">
-          <h1 style="text-align: center;">FAQ</h1>
 
-          <div class="accordion md-accordion" id="accordionEx" role="tablist" aria-multiselectable="true">
+        <div class="col-md-6">         
+          <h1 style="text-align: center;">FAQ</h1>                
+         
+          <button class="accordion"><strong>How many team members can i invite?</strong> <svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+          <div class="panel">
+            <p>You can have up to 2 team members</p>
+          </div>
 
-            <!-- Accordion card -->
-            <div class="card"style="border-top: transparent;">
-        
-              <!-- Card header -->
-              <div class="card-header" role="tab" id="headingOne1">
-                <a data-toggle="collapse" data-parent="#accordionEx" href="#collapseOne1" aria-expanded="true"
-                   aria-controls="collapseOne1">
-                  <h5 class="mb-0">
-                    How many team members can I invite? <i class="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-        
-              <!-- Card body -->
-              <div id="collapseOne1" class="collapse show" role="tabpanel" aria-labelledby="headingOne1"
-              data-parent="#accordionEx">
-                 <div class="card-body">
-                  You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.
-                </div>
-              </div>
-            </div>
+          <button class="accordion"><strong>What is the maximum file upload size?</strong> <svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+          <div class="panel">
+            <p>No more than 2GB. All file in your account must fit your allocated storage space</p>
+          </div>
 
+          <button class="accordion"><strong>How do i reset my password?</strong> <svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+          <div class="panel">
+            <p>Go to forgot password and follow the steps.</p>
+          </div>
 
-            <div class="card">
+          <button class="accordion"><strong>Can i cancel my subscription?</strong> <svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+          <div class="panel">
+            <p>Yes you can cancel your subscription at any time.</p>
+          </div>
 
-              <div class="card-header" role="tab" id="headingTwo2">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseTwo2"
-                   aria-expanded="false" aria-controls="collapseTwo2">
-                  <h5 class="mb-0">
-                    What is the maximum file upload? <i class="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-        
-
-              <!-- Card body -->
-              <div id="collapseTwo2" class="collapse" role="tabpanel" aria-labelledby="headingTwo2"
-                   data-parent="#accordionEx">
-                 <div class="card-body">
-                  No more than 2GB. All files in your account must fit your allotted storage space.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-
-              <div class="card-header" role="tab" id="headingThree3">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseThree3"
-                   aria-expanded="false" aria-controls="collapseThree3">
-                  <h5 class="mb-0">
-                   How do i reset my password? <i class="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-        
-              <!-- Card body -->
-              <div id="collapseThree3" class="collapse" role="tabpanel" aria-labelledby="headingThree3"
-           data-parent="#accordionEx">
-
-              <div class="card-body">
-                  Click "Forgot password" from the login paper or "Change password" from your profile page. A reset link will be emailed to you
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-
-              <div class="card-header" role="tab" id="headingFour4">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFour4"
-                   aria-expanded="false" aria-controls="collapseFour4">
-                  <h5 class="mb-0">
-                  Can I ancel my subscription? <i class="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-        
-              <!-- Card body -->
-              <div id="collapseFour4" class="collapse" role="tabpanel" aria-labelledby="headingFour4"
-           data-parent="#accordionEx">
-
-              <div class="card-body">
-                  Yes! Send us a message and we `ll process your request no questions asked!
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-
-              <div class="card-header" role="tab" id="headingFive5">
-                <a class="collapsed" data-toggle="collapse" data-parent="#accordionEx" href="#collapseFive5"
-                   aria-expanded="false" aria-controls="collapseFive5">
-                  <h5 class="mb-0">
-                  Do you provide additional support? <i class="fas fa-angle-down rotate-icon"></i>
-                  </h5>
-                </a>
-              </div>
-        
-              <!-- Card body -->
-              <div id="collapseFive5" class="collapse" role="tabpanel" aria-labelledby="headingFive5"
-           data-parent="#accordionEx">
-
-              <div class="card-body">
-                  Chat and email support is avialable 24/7. Phone lines are open during normal
-                </div>
-              </div>
-            </div>
-        
-            </div>
+          <button class="accordion"><strong>Do you provide additional support?</strong> <svg xmlns="http://www.w3.org/2000/svg" id="arrow" width="20" height="20" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+          </svg></button>
+          <div class="panel">
+            <p>We provide 14/7 live chagt</p>
           </div>
 
 
@@ -162,13 +85,13 @@
         </div>
       </div>
     </div>
-
-    </div>
   </section>
 
   <div class="fixed-bottom">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/fessouma1">Franck Essouma</a>.
   </div>
+
+  <script src="app.js"></script>
 </body>
 </html>

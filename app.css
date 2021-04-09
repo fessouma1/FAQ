@@ -4,46 +4,58 @@ body{
 }
 #cardDisplay{
     background-color: white;
-    margin-top: 50px;
+    margin-top: 80px;
     padding-bottom: 100px;
     background-image: url(images/bg-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-attachment: relative;
     background-position: center; 
     border-radius: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
     
 }
-.card-header{
+
+.accordion {
     background-color:transparent;
-    border: transparent;
-    text-decoration-color: black;
-    
-}
-.accordion md-accordion{
-    border: transparent;
-}
-.card-body{
-    background-color: transparent;
-}
-.mb-0{
-    font-family: "Times New Roman", Times, serif;
-    background-color: transparent;
-    color: black;
-}
-.card{
-    background-color: transparent;
-    border-right: transparent;
-    border-left: transparent;
-}
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    color: orange;
+  }
+  
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color:transparent;
+    overflow: hidden;
+  }
+ 
 .attribution{
-    position: fixed;
+    position: sticky;
+    scroll-behavior: none;
 }
 #woman{
     position: center;
 }
 #above{
-    position:fixed;
+    position:absolute;
     margin-top: 9.7em;
     margin-left: -1.0em;
 }
+.accordion-button:hover {
+    color: orange;
+}
+#arrow{
+    align-items:flex-end;
+    color: orange;
+}
+
