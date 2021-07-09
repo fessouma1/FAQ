@@ -31,7 +31,9 @@ body{
   .active, .accordion:hover {
     color: orange;
   }
-  
+  .active svg{
+transform: rotate(180deg);
+  }
   .panel {
     padding: 0 18px;
     display: none;
@@ -41,7 +43,6 @@ body{
  
 .attribution{
     position: sticky;
-    scroll-behavior: none;
 }
 #woman{
     position: center;
